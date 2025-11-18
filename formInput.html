@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Input</title>
+    <script src="formValidation.js"></script>
+    <style>
+      .error-message {
+        color: red;
+        font-size: 12px;
+        display: block;
+        margin-top: 5px;
+        margin-bottom: 10px;
+      }
+      input,
+      textarea,
+      select {
+        border: 1px solid #000 !important;
+        box-shadow: none !important;
+        outline: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>User Registration Form</h1>
+
+    <form>
+      <label>First Name:</label>
+      <input type="text" name="firstname" />
+      <span class="error-message" id="error-firstname"></span>
+      <br />
+
+      <label>Last Name:</label>
+      <input type="text" name="lastname" />
+      <span class="error-message" id="error-lastname"></span>
+      <br />
+
+      <label>Date of Birth:</label>
+      <input type="date" name="dateofbirth" />
+      <span class="error-message" id="error-dateofbirth"></span>
+      <br />
+
+      <label>Password:</label>
+      <input type="password" name="password" />
+      <span class="error-message" id="error-password"></span>
+      <br />
+
+      <label>Gender:</label>
+      <input type="radio" name="gender" value="male" />Male
+      <input type="radio" name="gender" value="female" />Female
+      <input type="radio" name="gender" value="other" />Other
+      <span class="error-message" id="error-gender"></span>
+      <br />
+
+      <label>Languages:</label>
+      <input type="checkbox" name="language" value="bangla" />Bangla
+      <input type="checkbox" name="language" value="english" />English
+      <span class="error-message" id="error-language"></span>
+      <br />
+
+      <label>Country:</label>
+      <select name="country">
+        <option value="">Select a country</option>
+        <option value="bangladesh">Bangladesh</option>
+        <option value="canada">Canada</option>
+        <option value="uk">United Kingdom</option>
+        <option value="australia">Australia</option>
+        <option value="india">India</option>
+        <option value="germany">Germany</option>
+        <option value="france">France</option>
+      </select>
+      <span class="error-message" id="error-country"></span>
+      <br />
+
+      <label>Favorite Color:</label>
+      <input type="color" name="color" />
+      <br /><br />
+
+      <label>Bio:</label>
+      <br />
+      <textarea name="bio" rows="5" cols="40"></textarea>
+      <span class="error-message" id="error-bio"></span>
+      <br />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
